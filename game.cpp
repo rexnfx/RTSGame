@@ -7,5 +7,7 @@ Game::Game() {
 }
 
 void Game::run() {
+	while (running) {
 
+	}
 }
