@@ -1,0 +1,5 @@
+//graphics objects
+
+class GraphicsManager {
+
+};
