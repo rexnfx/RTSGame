@@ -58,7 +58,7 @@ LRESULT CALLBACK WndProc (HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 
 HRESULT InitWindow (HINSTANCE hInstance, int nCmdShow) {
-    // Register class
+    // Register class2
     WNDCLASSEX wcex;
     wcex.cbSize = sizeof (WNDCLASSEX);
     wcex.style = CS_HREDRAW | CS_VREDRAW;
