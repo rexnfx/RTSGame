@@ -8,6 +8,11 @@ Game::Game() {
 
 void Game::run() {
 	while (running) {
-
+		//throttle the game
+		//throttling code
+		
+		inputManager.handle();
+		
+		grahicsManager.render(this);
 	}
 }
