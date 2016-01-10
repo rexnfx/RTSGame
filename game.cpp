@@ -3,7 +3,8 @@
 #include <Windows.h>
 
 Game::Game() {
-
+ inputManager = new InputManager;
+ graphicsManager = new GraphicsManager;
 }
 
 void Game::run() {
@@ -11,7 +12,7 @@ void Game::run() {
 		//throttle the game
 		//throttling code
 		
-		inputManager.handle();
+		inputManager.handleinput(this);
 		
 		grahicsManager.render(this);
 	}
