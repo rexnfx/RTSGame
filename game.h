@@ -1,5 +1,6 @@
 //game loop
 #include "graphics.h"
+#include "gameinput.h"
 
 class Game {
 	InputManager inputManager;
