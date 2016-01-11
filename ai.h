@@ -1,5 +1,5 @@
-\\executes slices of ai
+//executes slices of ai
 class AIManager {
 public:
- AIManager ();
-}
+    AIManager();
+};

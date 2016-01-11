@@ -2,6 +2,6 @@
 
 class InputManager {
 public:
-InputManager ();
-handleInput(Game);
-}
+    InputManager(Game* game);
+    void handleInput();
+};

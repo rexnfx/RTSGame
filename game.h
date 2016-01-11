@@ -3,11 +3,13 @@
 #include "gameinput.h"
 
 class Game {
-	InputManager inputManager;
+    InputManager* inputManager;
     GraphicsManager* graphicsManager;
-	bool running;
+    bool running;
 public:
     Game();
     void run();
-	bool isRunning() { return running; }
+    bool isRunning() {
+        return running;
+    }
 };

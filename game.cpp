@@ -3,17 +3,17 @@
 #include <Windows.h>
 
 Game::Game() {
- inputManager = new InputManager;
- graphicsManager = new GraphicsManager;
+    inputManager = new InputManager(this);
+    graphicsManager = new GraphicsManager(this);
 }
 
 void Game::run() {
-	while (running) {
-		//throttle the game
-		//throttling code
-		
-		inputManager.handleinput(this);
-		
-		grahicsManager.render(this);
-	}
+    while(running) {
+        //throttle the game
+        //throtling code
+
+        inputManager->handleInput();
+
+        graphicsManager->render();
+    }
 }
