@@ -8,6 +8,8 @@
     <ClInclude Include="..\..\player.h" />
     <ClInclude Include="..\..\networkManager.h" />
     <ClInclude Include="..\..\gui.h" />
+    <ClInclude Include="..\..\unit.h" />
+    <ClInclude Include="..\..\pathfinding.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\game.cpp" />
@@ -17,6 +19,8 @@
     <ClCompile Include="..\..\player.cpp" />
     <ClCompile Include="..\..\networkManager.cpp" />
     <ClCompile Include="..\..\ai.cpp" />
+    <ClCompile Include="..\..\pathfinding.cpp" />
+    <ClCompile Include="..\..\unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\LICENSE" />

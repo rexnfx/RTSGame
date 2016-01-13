@@ -70,7 +70,9 @@
     <ClInclude Include="..\..\graphics.h" />
     <ClInclude Include="..\..\gui.h" />
     <ClInclude Include="..\..\networkManager.h" />
+    <ClInclude Include="..\..\pathfinding.h" />
     <ClInclude Include="..\..\player.h" />
+    <ClInclude Include="..\..\unit.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\ai.cpp" />
@@ -79,7 +81,9 @@
     <ClCompile Include="..\..\graphics.cpp" />
     <ClCompile Include="..\..\main.cpp" />
     <ClCompile Include="..\..\networkManager.cpp" />
+    <ClCompile Include="..\..\pathfinding.cpp" />
     <ClCompile Include="..\..\player.cpp" />
+    <ClCompile Include="..\..\unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\LICENSE" />
