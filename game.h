@@ -7,6 +7,7 @@
 class Game {
     InputManager* inputManager;
     GraphicsManager* graphicsManager;
+<<<<<<< HEAD
     Player* player1;
     NetworkManager* networker;
     bool running;
@@ -16,6 +17,9 @@ class Game {
     DWORD nextGameTick;
     int loops;
     float interpolation;
+=======
+    bool running;
+>>>>>>> 3dd28a402433a7da666b7c46f2ceb2146db55b86
 public:
     Game();
     void run();
