@@ -1,13 +1,25 @@
-//game loop
+#include <Windows.h>
 #include "graphics.h"
 #include "gameinput.h"
+#include "player.h"
+#include "networkManager.h"
 
 class Game {
-	InputManager inputManager;
+    InputManager* inputManager;
     GraphicsManager* graphicsManager;
-	bool running;
+    Player* player1;
+    NetworkManager* networker;
+    bool running;
+    static const int ticksPerSecond = 25;
+    static const int skipTicks = 1000 / ticksPerSecond;
+    static const int maxFrameskip = 5;
+    DWORD nextGameTick;
+    int loops;
+    float interpolation;
 public:
     Game();
     void run();
-	bool isRunning() { return running; }
+    bool isRunning() {
+        return running;
+    }
 };

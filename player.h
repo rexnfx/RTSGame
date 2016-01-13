@@ -1,8 +1,9 @@
 // stores the current players state related data
 // executes player related code
-#include "game.h"
+class Game;
 
 class Player {
+    Game* game;
 public:
- Player();
-}
+    Player (Game*);
+};

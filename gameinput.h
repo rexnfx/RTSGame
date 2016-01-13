@@ -1,7 +1,8 @@
 #include <windows.h>
+class Game;
 
 class InputManager {
 public:
-InputManager ();
-handleInput(Game);
-}
+    InputManager (Game* game);
+    void handleInput();
+};

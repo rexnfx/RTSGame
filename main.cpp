@@ -26,12 +26,13 @@ int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 
     // Main message loop
     MSG msg = {0};
-    while (WM_QUIT != msg.message) {
+    while (WM_QUIT != msg.message && game->isRunning()) {
         if (PeekMessage (&msg, NULL, 0, 0, PM_REMOVE)) {
             TranslateMessage (&msg);
             DispatchMessage (&msg);
         } else {
             //Render();
+            game->run();
         }
     }
 }

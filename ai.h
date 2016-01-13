@@ -1,5 +1,9 @@
-\\executes slices of ai
+//executes slices of ai
+//generally creates its own thread and may use GPU for math
+class Game;
+
 class AIManager {
+    Game* game;
 public:
- AIManager ();
-}
+    AIManager (Game*);
+};
